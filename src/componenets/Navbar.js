@@ -1,37 +1,37 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Image from '../images/logo.png';
+import Button from 'react-bootstrap/Button';
 
-function Navbar01() {
+// Import your image file
+import 
+
+
+function NavScrollExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        {/* Use the Image component in place of Navbar.Brand */}
+        <Navbar.Brand href="#">
+          <Image src={Image} alt="Logo" fluid />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-        >
-            <Nav.Link href="#action1">About</Nav.Link>
-            <Nav.Link href="#action2">ContactUs</Nav.Link>
-            <NavDropdown title="Timetable" id="navbarScrollingDropdown">
-              
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Live Location
-            </Nav.Link>
+          <Nav className="mx-auto" style={{ maxHeight: '100px' }} navbarScroll>
+            <Nav.Link href="#home">About</Nav.Link>
+            <Nav.Link href="#about">Contact us</Nav.Link>
+            <Nav.Link href="#contact">TimeTable</Nav.Link>
+            <Nav.Link href="#live-location">Live Location</Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Button variant="outline-success" style={{ marginLeft: 'auto', borderColor: 'red', color: 'red' }}>
+            Sign in
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-export default Navbar01;
+export default NavScrollExample;
