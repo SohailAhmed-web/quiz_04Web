@@ -1,8 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Image from 'react-bootstrap/Image';
-import image1 from '../assets/image1.png';
-import image3 from '../assets/image3.png';
+import image3 from '../images/bus.png';
 
 function Slides() {
   return (
