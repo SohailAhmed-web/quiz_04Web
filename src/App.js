@@ -1,13 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Slides from './componenets/carousal';
-import Contact from './componenets/ContactUs';
+import NavScrollExample from'./componenets/Navbar';
 function App() {
   return (
     <div>
       
-      <Contact/>
-      <Slides/>
+      <NavScrollExample/>
       
 
         </div>
