@@ -5,8 +5,9 @@ import Contact from './componenets/ContactUs';
 function App() {
   return (
     <div>
-      <Slides/>
+      
       <Contact/>
+      <Slides/>
       
 
         </div>
