@@ -1,34 +1,27 @@
 import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-function DarkVariantExample() {
+function IndividualIntervalsExample() {
   return (
-    <Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img src=""
-        />
+    <Carousel>
+      <Carousel.Item interval={1000}>
+        <ExampleCarouselImage text="First slide" />
         <Carousel.Caption>
-          <h5>First slide label</h5>
+          <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
-          alt="Second slide"
-        />
+      <Carousel.Item interval={500}>
+        <ExampleCarouselImage text="Second slide" />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
+          <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src=
-        />
+        <ExampleCarouselImage text="Third slide" />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
+          <h3>Third slide label</h3>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
@@ -38,4 +31,4 @@ function DarkVariantExample() {
   );
 }
 
-export default DarkVariantExample;
+export default IndividualIntervalsExample;
