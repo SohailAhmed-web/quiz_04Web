@@ -26,7 +26,6 @@ function DarkVariantExample() {
         <img
           className="d-block w-100"
           src=
-          alt="Third slide"
         />
         <Carousel.Caption>
           <h5>Third slide label</h5>
